@@ -10,14 +10,14 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-navigation__link" href="index.html">
-          <img class="main-navigation__logo" src="#" width="100" height="100" alt="Logo of Sedona">
+          <img class="main-navigation__link--logo" src="#" width="100" height="100" alt="Logo of Sedona">
         </a>
         <ul class="main-navigation__list">
           <li class="main-navigation__item"><a class="main-navigation__link" href="info.html">Информация</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link" href="photo.html">Фото и Видео</a></li>
           <!--Такой второй вариант расположения логотипа?
           <li class="main-navigation__item"><a class="main-navigation__link" href="index.html">
-              <img class="main-navigation__logo" src="#" width="100" height="100" alt="Logo of Sedona">
+              <img class="main-novigation__link--logo" src="#" width="100" height="100" alt="Logo of Sedona">
             </a></li> -->
           <li class="main-navigation__item"><a class="main-navigation__link" href="map.html">Карта штата</a></li>
           <li class="main-navigation__item"><a class="main-navigation__link" href="hotels.html">Гостиницы</a></li>
@@ -26,13 +26,24 @@
     </header>
 
     <main>
-      <section class="welcome">
-        <!--в первых двух абзацах наверное не P-->
-        <p class="welcome__top1">welcome</p>
-        <p class="welcome__top2">-to the gorgeous-</p>
+      <section class="welcome"> <!--section welcome наверно нужно назвать иначе, page-header? но тогда названия клаасов увеличиваются-->
+        <!--в первых двух абзацах наверное не P. Не понимаю, как оформить модификаторы-->
+        <p class="welcome__item welcome__item--top">welcome</p>
+        <p class="welcome__item welcome__item--middle">-to the gorgeous-</p>
         <h1 class="welcome__title">Sedona</h1>
-        <p class="welcome__bottom">"Because the Grand <br> Canyon sacks!"</p>
+        <p class="welcome__item welcome__item--bottom">"Because the Grand <br> Canyon sacks!"</p>
       </section>
+
+      <!--Вариант как оформить первый фон img
+        <section class="welcome">
+          <h1 class="welcome__title">Sedona</h1>
+        </section>
+        а потом в css написать: 
+        .welcome {
+    background: url(".jpg") no-repeat center;
+    background-size: cover;
+                  }
+      -->
 
       <section class="features">
         
