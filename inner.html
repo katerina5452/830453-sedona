@@ -23,20 +23,23 @@
         </header>
     <main>
         <section class="filter">
-            
+            <h1 class="visually-hidden">Фильтры</h1>
             <ul class="filter__list">
-                <li class="filter__first--item">Инфраструктура</li>
+                <li class="filter__first--item">Инфраструктура
                     <ul class="filter-sublist">
                         <li class="filter-sublist--item">Бассейн</li>
                         <li class="filter-sublist--item">Парковка</li>
                         <li class="filter-sublist--item">WI-Fi</li>
                     </ul>
-                <li class="filter__first--item">Тип жилья</li>
-                <ul class="filter-sublist">
+                </li>
+                                
+                <li class="filter__first--item">Тип жилья
+                    <ul class="filter-sublist">
                         <li class="filter-sublist--item">Гостиница</li>
                         <li class="filter-sublist--item">Мотель</li>
                         <li class="filter-sublist--item">Апартаменты</li>
                     </ul>
+                </li>
             </ul>
             <p>Стоимость в сутки (Р):</p>
             <!--Здесь будет бегунок с табличкой-->
@@ -45,25 +48,55 @@
         </section>
 
         <section class="info">
-            <h1>Найдено: 3</h1> <!--Здесь наверное будет какой-то алгоритм, изменяющий число найденных вариантов-->
+            <h1 class="infor__title">Найдено: 3</h1> <!--Здесь наверное будет какой-то алгоритм, изменяющий число найденных вариантов-->
                 <ul class="info__sort">
-                    <li class="info__sort--item">Сортировка</li>
+                    <li class="info__sort--item">Сортировка
                         <ul class="info__sort--sublist">
                             <!--какой класс для элементов списка???-->
-                            <li>По цене</li>
-                            <li>По типу</li>
-                            <li>По рейтингу</li>
+                            <li class="info__sort--subitem">По цене</li>
+                            <li class="info__sort--subitem">По типу</li>
+                            <li class="info__sort--subitem">По рейтингу</li>
                         </ul>
+                    </li>
+                </ul>
                 <!--как-то сделать стелочки-->
         </section>
 
         <section class="catalog">
             <div class="catalog__list">
-                <img src="#">
-                <!-- вставить таблицу-->
+                <div class="catalog__list--item">
+                    <img src="#" alt="Amara">
+                    <h2 class="catalog__title">Amara resort &#38; spa</h2>
+                    <p class="catalog__text">Гостиница</p>
+                    <p class="catalog__text">ОТ 4000 Р.</p>
+                <!-- звездочки 5*img из спрайта????-->
+                    <a class="сatalog-link"  href="#">Подробнее</a>
+                    <button class="catalog__button">Забронировать</button>
+                    <p class="rate">Рейтинг: 8,5</p>
+                </div>
 
+                <div class="catalog__list--item">
+                    <img src="#" alt="Desert">
+                    <h2 class="catalog__title">Desert Quail Inn</h2>
+                    <p class="catalog__text">Мотель</p>
+                    <p class="catalog__text">ОТ 3000 Р.</p>
+                    <!-- звездочки 3*img из спрайта????-->
+                    <a class="сatalog-link"  href="#">Подробнее</a>
+                    <button class="catalog__button">Забронировать</button>
+                    <p class="rate">Рейтинг: 8,9</p>
+                </div>
+
+                <div class="catalog__list--item">
+                    <img src="#" alt="Diablo">
+                    <h2 class="catalog__title">Villas at poco Diablo</h2>
+                    <p class="catalog__text">Апартаменты</p>
+                    <p class="catalog__text">ОТ 2000 Р.</p>
+                    <!-- звездочки 2*img из спрайта????-->
+                    <a class="сatalog-link"  href="#">Подробнее</a>
+                    <button class="catalog__button">Забронировать</button>
+                    <p class="rate">Рейтинг: 9,2</p>
+                </div>
             </div>
-
         </section>
 
 
