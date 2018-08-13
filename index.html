@@ -20,36 +20,30 @@
               <img class="main-novigation__link--logo" src="#" width="100" height="100" alt="Logo of Sedona">
             </a></li> -->
           <li class="main-navigation__item"><a class="main-navigation__link" href="map.html">Карта штата</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="hotels.html">Гостиницы</a></li>
+          <li class="main-navigation__item"><a class="main-navigation__link" href="inner.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="welcome"> <!--section welcome наверно нужно назвать иначе, page-header? но тогда названия клаасов увеличиваются-->
-        <!--в первых двух абзацах наверное не P. Не понимаю, как оформить модификаторы-->
+     <!--Вариант со штрифтами <section class="welcome"> 
         <p class="welcome__item welcome__item--top">welcome</p>
         <p class="welcome__item welcome__item--middle">-to the gorgeous-</p>
         <h1 class="welcome__title">Sedona</h1>
         <p class="welcome__item welcome__item--bottom">"Because the Grand <br> Canyon sacks!"</p>
-      </section>
+      </section> -->
 
-      <!--Вариант как оформить первый фон img
+      <!--Вариант как оформить первый фон img-->
         <section class="welcome">
           <h1 class="welcome__title">Sedona</h1>
         </section>
-        а потом в css написать: 
-        .welcome {
-    background: url(".jpg") no-repeat center;
-    background-size: cover;
-                  }
-      -->
-
-      <section class="features">
+       
+      <!--Вариант 1
+        <section class="features">
         
         <div class="features__top">
           <h2 class="features__title">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
-          <p class="text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+          <p class="features__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
 
         <div class="features__item1">
@@ -96,45 +90,55 @@
               </li>
             </ul>
           </div>
-        </section>
+        </section>-->
 
-          <!--второй варинат оформления features
+          <!--второй варинат оформления features-->
           <section class="features">
+
             <ul class="feature__item">
-              <li class="feature__item--first">Настоящий городок</li>
-              <p class="text-features">-№1-</p>
-              <p class="text-features">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <ul>
-                <li class="feature__item--second">Жилье</li>
-                <p class="text-features">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                <li class="feature__item--second">Еда</li>
-                <p class="text-features">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                <li class="feature__item--second">Сувениры</li>
-                <p class="text-features">Не только китайского, но и местного производства!</p>
-              </ul>
-              <li class="feature__item--first">Там есть мост дьявола</li>
-              <p class="text-features">-№2-</p>
-              <p class="text-features">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-                <ul>
-                    <li class="feature__item--second">Небольшая площадь</li>
-                    <p class="text-features">-№3-</p>
-                    <p class="text-features">Все достопримечательности находятся очень близко</p>
+
+              <li class="feature__item--first">Настоящий городок
+                <p class="features__text">-№1-</p>
+                <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                          
+                  <ul>
+                    <li class="feature__item--second">Жилье
+                      <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </li>
+                    <li class="feature__item--second">Еда
+                      <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </li>
+                    <li class="feature__item--second">Сувениры
+                      <p class="features__text">Не только китайского, но и местного производства!</p>
+                    </li>
+                  </ul>
+                </li>
+
+                    <li class="feature__item--first">Там есть мост дьявола
+                      <p class="features__text">-№2-</p>
+                      <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     
-                    <li class="feature__item--second">Красивая дорога</li>
-                    <p class="text-features">-№4-</p>
-                    <p class="text-features">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
-                    
-                    <li class="feature__item--second">Мало туристов</li>
-                    <p class="text-features">-№5-</p>
-                    <p class="text-features">Большинство едет в Гранд-Каньон и толпится там!</p>
+                      <ul>
+                        <li class="feature__item--second">Небольшая площадь
+                          <p class="features__text">-№3-</p>
+                          <p class="features__text">Все достопримечательности находятся очень близко</p>
+                        </li>
+                        <li class="feature__item--second">Красивая дорога
+                          <p class="features__text">-№4-</p>
+                          <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
+                        </li>
+                        <li class="feature__item--second">Мало туристов
+                          <p class="features__text">-№5-</p>
+                          <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
+                        </li>
+                    </ul>
+                  </li>
                 </ul>
-            </ul>
           </section>
-        -->
+        
           <section class="order">
-            <h2 class="order-title">Заинтересовались?</h2> <!--надо ли так заголовкам и текстам давать 
-            отдельные классы? с одной стороны это вроде как по БЭМ, но с другой - это ведь увеличивает количество кода-->
-             <p class="order-text-">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+            <h2 class="order__title">Заинтересовались?</h2> 
+            <p class="order__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
                          
             <form>
 
@@ -148,7 +152,7 @@
               <p class="hashtag__item">#visitsedona</p>
             </div>
             
-            <ul class="social__list">
+            <ul class="social">
                 <li><a class="social__button social__button--twitter"  href="#">Twitter</a></li>
                 <li><a class="social__button social__button--Facebook" href="#">Facebook</a></li>
                 <li><a class="social__button social__button--YouTube" href="#">YouTube</a></li>
@@ -158,7 +162,7 @@
             <p class="footer-copyright">
                 <b>Website by</b> 
                 <img src="#" alt="mini-logo">
-                <a class="button" href="https://htmlacademy.ru">html academy</a>
+                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
             </p>
           </footer> 
         
