@@ -24,24 +24,55 @@
     <main>
         <section class="filter">
             <h1 class="visually-hidden">Фильтры</h1>
-            <ul class="filter__list">
-                <li class="filter__item">Инфраструктура
-                    <ul class="filter__sublist">
-                        <li class="filter__subitem">Бассейн</li>
-                        <li class="filter__subitem">Парковка</li>
-                        <li class="filter__subitem">WI-Fi</li>
-                    </ul>
-                </li>
-                                            
-                <li class="filter__item">Тип жилья
-                    <ul class="filter__sublist">
-                        <li class="filter__subitem">Гостиница</li>
-                        <li class="filter__subitem">Мотель</li>
-                        <li class="filter__subitem">Апартаменты</li>
-                    </ul>
-                </li>
-            </ul>
-            <p>Стоимость в сутки (Р):</p>
+            <form class="filter__edit" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Инфраструктура</legend>
+                        <ul class="filter__list">
+                            <li class="filter__item">Инфраструктура
+                                <ul class="filter__sublist">
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" name="pool" id="pool" checked>
+                                        <label for="pool">Бассейн</label> 
+                                    </li>
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" name="parking" id="parking">
+                                        <label for="parking">Парковка</label> 
+                                    </li>
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" name="WI-FI" id="WI-FI">
+                                        <label for="WI-Fi">WI-FI</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                </fieldset>
+
+                <fieldset class="filter__fieldset">
+                    <legend class="filter__legend">Тип жилья</legend>
+                        <ul class="filter__list">
+                            <li class="filter__item">Тип жилья
+                                <ul class="filter__sublist">
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" checked name="hotel" id="hotel">
+                                        <label for="hotel">Гостиница</label> 
+                                    </li>
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" checked name="motel" id="motel">
+                                        <label for="motel">Мотель</label> 
+                                    </li>
+                                    <li class="filter__subitem">
+                                        <input type="checkbox" class="filter__checkbox" checked name="appartemets" id="appartemets">
+                                        <label for="appartemets">Апартаменты</label>  
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                      
+                </fieldset>
+            </form>
+           
+                                           
+                <p>Стоимость в сутки (Р):</p>
             <!--Здесь будет бегунок с табличкой-->
             <button>Отправить</button>
 
@@ -65,7 +96,7 @@
         <section class="catalog">
             <div class="catalog__list">
                 <div class="catalog__item">
-                    <img src="img/Amara.jpg" alt="Amara">
+                    <img src="img/Amara.jpg" alt="Фотография гостиницы Amara resort">
                     <h2 class="catalog__title">Amara resort &#38; spa</h2>
                     <p class="catalog__text">Гостиница</p>
                     <p class="catalog__text">ОТ 4000 Р.</p>
@@ -76,7 +107,7 @@
                 </div>
 
                 <div class="catalog__item">
-                    <img src="img/desert.jpg" alt="Desert">
+                    <img src="img/desert.jpg" alt="Фотография Мотеля Desert Quail Inn">
                     <h2 class="catalog__title">Desert Quail Inn</h2>
                     <p class="catalog__text">Мотель</p>
                     <p class="catalog__text">ОТ 3000 Р.</p>
@@ -87,7 +118,7 @@
                 </div>
 
                 <div class="catalog__item">
-                    <img src="img/villas.jpg" alt="Diablo">
+                    <img src="img/villas.jpg" alt="Фотография Villas at poco Diablo">
                     <h2 class="catalog__title">Villas at poco Diablo</h2>
                     <p class="catalog__text">Апартаменты</p>
                     <p class="catalog__text">ОТ 2000 Р.</p>
