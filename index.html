@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    
   </head>
   
   <body>
@@ -25,56 +27,71 @@
 
     <main>
       <section class="welcome">
-        <h1 class="welcome__title">Sedona</h1>
+          <img src="img/background.jpg" width="100%" height="" alt="Вид на горы">
+          <!--Вопрос почему не встала картинка через css???-->
+        <h1 class="welcome__title">Седона — небольшой городок в Аризоне, <br>
+            заслуживающий большего!</h1>
+        <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
        
       <section class="features">
         <ul class="features__list">
 
-              <li class="features__item">Настоящий городок
+              <li class="features__item feature__white">
                 <img src="img/city sedona.jpg" alt="The city of Sedona">
-                <p class="features__text">-№1-</p>
+                <p class="features-title">Настоящий городок</p>
+                <p class="features__number">№1</p>
                 <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                          
-                  <ul>
-                    <li class="features__item-point">Жилье
+              </li> 
+
+                  <ul class="features__sublist">
+                    <li class="features__item-point">
+                      <p class="features-title">Жилье </p>
                       <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
                     </li>
-                    <li class="features__item-point">Еда
+                    <li class="features__item-point">
+                      <p class="features-title">Еда</p>
                       <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                     </li>
-                    <li class="features__item-pointd">Сувениры
+                    <li class="features__item-pointd">
+                      <p class="features-title">Сувениры</p>
                       <p class="features__text">Не только китайского, но и местного производства!</p>
                     </li>
                   </ul>
                 </li>
 
-                    <li class="features__item">Там есть мост дьявола
+                    <li class="features__item feature__white">
                       <img src="img/bridge of devil.jpg" alt="The bridge of the devil">
-                      <p class="features__text">-№2-</p>
+                      <p class="features-title">Там есть мост дьявола</p>
+                      <p class="features__number">№2</p>
                       <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                     
-                      <ul>
-                        <li class="features__item-point">Небольшая площадь
-                          <p class="features__text">-№3-</p>
+                      
+                        <li class="features__item">
+                          <p class="features-title">Небольшая площадь</p>
+                          <p class="features__number">№3</p>
                           <p class="features__text">Все достопримечательности находятся очень близко</p>
                         </li>
-                        <li class="features__item-point">Красивая дорога
-                          <p class="features__text">-№4-</p>
+
+                        <li class="features__item">
+                            <p class="features-title">Красивая дорога</p>
+                          <p class="features__number">№4</p>
                           <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
                         </li>
-                        <li class="features__item-point">Мало туристов
-                          <p class="features__text">-№5-</p>
+
+                        <li class="features__item">
+                            <p class="features-title">Мало туристов</p>
+                          <p class="features__number">№5</p>
                           <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
                         </li>
-                    </ul>
+                    
                   </li>
                 </ul>
           </section>
         
           <section class="search">
             <h2 class="search__title">Заинтересовались?</h2> 
-            <p class="search__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+            <p class="search__text">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
                          
             <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
               <fieldset class="search__fieldset">
@@ -82,25 +99,25 @@
                  
                 <p class="search__check-in">
                   <label name="Дата заезда" for="check-in">Дата заезда</label>
-                    <input type="date" name="Дата заезда" id="check-in">
+                    <input class="search__input" type="text" name="Дата заезда" placeholder="24 апреля 2017" id="check-in">
                   
                 </p>
                 
                 <p class="search__out">
                   <label name="Дата выезда" for="check-out">Дата выезда</label>
-                    <input type="date" name="Дата выезда" id="check-out">
+                    <input class="search__input"  type="text" name="Дата выезда" placeholder="04 июля 2017" id="check-out">
                 </p>
 
                 <label name="adults" for="adults-number">Взрослые</label>
-                  <input type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
+                  <input class="search__input" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
                 
 
                 <label name="kids" for="kids-number">Дети</label>
-                  <input type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
+                  <input class="search__input"  type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
                 
                 <p>
                   <form action="inner.html">
-                    <button class="order__button" type="submit">Найти</button>
+                    <button class="search__button" type="submit">Найти</button>
                   </form>
                 </p>
                 </fieldset>
