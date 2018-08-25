@@ -197,7 +197,76 @@ body {
 .footer-copyright a:active {
     color: #bdbbbc;
 }
-     
+.inner-page {
+    color: #000000;
+    background-color: #ffffff;
+}   
+.filter {
+    background-image: url("/img/fbg.png");
+    background-color: blue;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+/*Что я делаю не так? Картинка не встает на место. Цветом выделила, чтобы заметно было*/
+.filter__list {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+}
+.filter__legend {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+}
+.filter__text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+}
+.filter__button {
+    color: #ffffff;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 11px 35px;
+    text-transform: uppercase;
+}
+.filter__button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.info__title {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+}
+.info__sort,
+.info__subitem {
+    list-style: none;
+}
+.info__item {
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+li .info__subitem:not(:first-child){
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: rgba(0, 0, 0, 0.5);
+    }
+li .info__subitem:first-child{
+    color: #81b3d2;
+}
+.info__subitem:hover {
+   color: #81b3d2;
+}
+.info__subitem:active {
+    color: #81b3d2;
+ }
 
 
 
