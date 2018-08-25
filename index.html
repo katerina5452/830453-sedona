@@ -29,15 +29,14 @@
       <section class="welcome">
           <img src="img/background.jpg" width="100%" height="" alt="Вид на горы">
           <!--Вопрос почему не встала картинка через css???-->
-        <h1 class="welcome__title">Седона — небольшой городок в Аризоне, <br>
-            заслуживающий большего!</h1>
+        <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
         <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
        
       <section class="features">
         <ul class="features__list">
 
-              <li class="features__item feature__white">
+              <li class="features__item--banner">
                 <img src="img/city sedona.jpg" alt="The city of Sedona">
                 <p class="features__title">Настоящий городок</p>
                 <p class="features__number">№1</p>
@@ -60,7 +59,7 @@
                   </ul>
                 </li>
 
-                    <li class="features__item feature__white">
+                    <li class="features__item--banner">
                       <img src="img/bridge of devil.jpg" alt="The bridge of the devil">
                       <p class="features__title">Там есть мост дьявола</p>
                       <p class="features__number">№2</p>
@@ -91,21 +90,20 @@
         
           <section class="search">
             <h2 class="search__title">Заинтересовались?</h2> 
-            <p class="search__text">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+            <p class="search__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
                          
             <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset class="search__fieldset">
-                <legend class="search__legend">Поиск гостиницы в Седоне</legend>
+              <h2 class="search__name"> Поиск гостиницы в Седоне </h2>
                  
                 <p class="search__check-in">
                   <label name="Дата заезда" for="check-in">Дата заезда</label>
-                    <input class="search__input" type="text" name="Дата заезда" placeholder="24 апреля 2017" id="check-in">
+                    <input class="search__input" type="text" name="check-in" placeholder="24 апреля 2017" id="check-in">
                   
                 </p>
                 
                 <p class="search__out">
                   <label name="Дата выезда" for="check-out">Дата выезда</label>
-                    <input class="search__input"  type="text" name="Дата выезда" placeholder="04 июля 2017" id="check-out">
+                    <input class="search__input"  type="text" name="check-out" placeholder="04 июля 2017" id="check-out">
                 </p>
 
                 <label name="adults" for="adults-number">Взрослые</label>
@@ -120,8 +118,7 @@
                     <button class="search__button" type="submit">Найти</button>
                   </form>
                 </p>
-                </fieldset>
-              </form>
+            </form>
           </section>
 
           <section class="map">
@@ -151,7 +148,7 @@
             <p class="footer-copyright">
                 <b>Website by</b> 
                 <img src="#" alt="mini-logo">
-                <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+                <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
             </p>
           </footer> 
         

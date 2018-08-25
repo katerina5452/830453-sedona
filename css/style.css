@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
   
-    font-family: "PT Sans", "Arial", "sans-serif";
+    font-family: "PT Sans", "Arial", sans-serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -84,7 +84,7 @@ body {
     line-height: 26px;
     text-align: center;
 }
-.feature__white{
+.features__item--banner{
     color: #ffffff;
     background-color: #81b3d2;
 }
@@ -94,10 +94,30 @@ body {
     font-weight: bold;
     line-height: 24px;
     text-align: center;
+    
 }
+.search__name {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #766357;
+    padding: 30px;
+}
+.search__name:hover {
+    background-color: #604e43;
+}
+.search__name:active {
+    background-color: rgba(80, 60, 51, 0.5);
+}
+
 .search__text {
     font-size: 14px;
     line-height: 26px;
+    text-align: center;
+}
+.search__form {
     text-align: center;
 }
 .search__button {
@@ -113,12 +133,13 @@ body {
     background-color: #669ec0;
 
 }
-.search__button:active {
-    background-color: #aacbde;
-}
+
 .search__input {
     font: inherit;
     background-color: #f2f2f2;
+}
+.search__button:active {
+    background-color: rgba(84, 150, 189, 0.5);
 }
 .search__input:hover {
     background-color: #ebebeb;
@@ -155,6 +176,28 @@ body {
     line-height: 26px;
     text-align: center;
 }
+.social {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.social__button:hover {
+    background-color: #669ec0;
+        
+}
+.social__button:active {
+    background-color: rgba(84, 150, 189, 0.5);
+}
+.footer-copyright a {
+    color: #000000;
+}
+.footer-copyright a:hover {
+    color: #81b3d2;
+}
+.footer-copyright a:active {
+    color: #bdbbbc;
+}
+     
 
 
 
