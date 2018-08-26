@@ -1,4 +1,5 @@
-body {
+body,
+.inner-page {
     margin: 0;
     padding: 0;
   
@@ -39,7 +40,7 @@ body {
 
 }
 .welcome {
-    background-image: url("img/backgraund.jpg");
+    background-image: url("/img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
     background-color: #ffffff;
@@ -202,12 +203,10 @@ body {
     background-color: #ffffff;
 }   
 .filter {
-    background-image: url("/img/fbg.png");
-    background-color: blue;
-    background-position: 0 0;
-    background-repeat: repeat;
-}
-/*Что я делаю не так? Картинка не встает на место. Цветом выделила, чтобы заметно было*/
+    background-image: url(../img/fbg.png);
+    background-repeat: no-repeat;
+    }
+/*не растягивается на всю ширину*/
 .filter__list {
     color: #ffffff;
     font-size: 14px;
@@ -267,6 +266,63 @@ li .info__subitem:first-child{
 .info__subitem:active {
     color: #81b3d2;
  }
+.catalog__hotel {
+    color: #000000;
+    font-size: 21px;
+    line-height: 26px;
+}
+.catalog__hotel:hover {
+    color: #81b3d2;
+}
+.catalog__hotel:active {
+    color: rgba(0, 0, 0, 0.5);
+}
+.сatalog__link {
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+    background-color:#81b3d2;
+    border: none;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    padding: 8px 16px;
+}
+.сatalog__link:hover {
+    background-color: #669ec0;
+    color: #ffffff;
+}
+.сatalog__link:active {
+    background-color: rgba(84, 150, 189, 0.5);
+    color: #ffffff;
+}
+.catalog__button {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #766357;
+    padding: 8px 16px;
+    border: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+/*Почему у ссылки и у кнопки при одинаковых параметрах 
+получились разные размеры? кнопка на 2 пикселя шире, чем ссылка?*/
+
+.catalog__button:hover {
+    background-color: #604e43;
+}
+.catalog__button:active {
+    background-color: rgba(80, 60, 51, 0.5);
+}
+.catalog__rate {
+    background-color: #f2f2f2;
+    color: #666666;
+}
+
 
 
 
