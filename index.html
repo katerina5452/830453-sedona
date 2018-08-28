@@ -13,86 +13,130 @@
     
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-navigation__link" href="index.html">
-          <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
-        </a>
-        <ul class="main-navigation__list">
-          <li class="main-navigation__item"><a class="main-navigation__link" href="info.html">Информация</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="photo.html">Фото и Видео</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="map.html">Карта штата</a></li>
-          <li class="main-navigation__item"><a class="main-navigation__link" href="inner.html">Гостиницы</a></li>
-        </ul>
-      </nav>
-    </header>
+        
+        
 
-    <main>
+        <div class="main-navigation__listcontainer">
+          <!--<ul class="main-navigation__list"> Список оставить? или li заменить на div???-->
+            <div class="main-navigation__item "><a class="main-navigation__link " href="info.html">Информация</a></div>
+            <div class="main-navigation__item "><a class="main-navigation__link " href="photo.html">Фото и Видео</a></div>
+            
+            <!--логотип вынести из меню!-->
+            <div class="main-navigation__logocontainer">
+                <a class="main-navigation__link " href="index.html">
+                  <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
+                </a>
+              </div>
+            
+              <div class="main-navigation__item "><a class="main-navigation__link " href="map.html">Карта штата</a></div>
+            <div class="main-navigation__item "><a class="main-navigation__link " href="inner.html">Гостиницы</a></div>
+          <!--</ul>-->
+        </div>
+
+      </nav>
+    
+
       <section class="welcome">
           <img src="img/background.jpg" width="100%" height="" alt="Вид на горы">
-          <!--Вопрос почему не встала картинка через css???-->
-        <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      </section>
-       
+          <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <!--как сюда вставить белую полосу и корявую белую вставку-->
+        </section>
+   
+    </header> 
+    
+    <main>
       <section class="features">
         <ul class="features__list">
 
-              <li class="features__item--banner">
-                <img src="img/city sedona.jpg" alt="The city of Sedona">
-                <p class="features__title">Настоящий городок</p>
+
+          <div class="features__banner1">    
+            <li class="features__item--banner">
+              <div class="features__description1"> <!--проверить ВСЕЕЕ на БЭМ-->
+                <h3 class="features__title">Настоящий городок</h3>
                 <p class="features__number">№1</p>
                 <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              </li> 
+              </div>
+            </li> 
 
-                  <ul class="features__sublist">
-                    <li class="features__item-point">
-                      <p class="features__title">Жилье </p>
+              <div class="features__image1">
+                <img src="img/city sedona.jpg" alt="The city of Sedona">
+              </div>
+          </div>
+
+          <div class="features__sublist1">
+            <!--<ul class="features__sublist">-->
+                  <!--div или li-->  
+              <div class="features__item-point">
+                      <h3 class="features__title">Жилье </h3>
                       <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-                    </li>
-                    <li class="features__item-point">
-                      <p class="features__title">Еда</p>
+              </div>
+
+                    <div class="features__item-point">
+                      <h3 class="features__title">Еда</h3>
                       <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </li>
-                    <li class="features__item-pointd">
-                      <p class="features__title">Сувениры</p>
+                    </div>
+
+                    <div class="features__item-point">
+                      <h3 class="features__title">Сувениры</h3>
                       <p class="features__text">Не только китайского, но и местного производства!</p>
-                    </li>
-                  </ul>
-                </li>
+                    </div>
 
-                    <li class="features__item--banner">
-                      <img src="img/bridge of devil.jpg" alt="The bridge of the devil">
-                      <p class="features__title">Там есть мост дьявола</p>
-                      <p class="features__number">№2</p>
-                      <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                 <!-- </ul>
+                </li>-->
+          </div>
+
+          <div class="features__banner2">   
+
+            <div class="features__image2"> 
+              <img src="img/bridge of devil.jpg" alt="The bridge of the devil">
+            </div>
                     
+            <li class="features__item--banner">
+              <div class="features__description2">
+                <h3 class="features__title">Там есть мост дьявола</h3>
+                <p class="features__number">№2</p>
+                <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+              </div>
+            </li>
+
+          </div>
+
+          <div class="features__sublist2">
                       
-                        <li class="features__item">
-                          <p class="features__title">Небольшая площадь</p>
-                          <p class="features__number">№3</p>
-                          <p class="features__text">Все достопримечательности находятся очень близко</p>
-                        </li>
+            <div class="features__item">
+              <h3 class="features__title">Небольшая площадь</h3>
+              <p class="features__number">№3</p>
+              <p class="features__text">Все достопримечательности находятся очень близко</p>
+            </div>
 
-                        <li class="features__item">
-                            <p class="features__title">Красивая дорога</p>
-                          <p class="features__number">№4</p>
-                          <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
-                        </li>
+            <div class="features__item">
+              <h3 class="features__title">Красивая дорога</h3>
+              <p class="features__number">№4</p>
+              <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
+            </div>
 
-                        <li class="features__item">
-                            <p class="features__title">Мало туристов</p>
-                          <p class="features__number">№5</p>
-                          <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
-                        </li>
+            <div class="features__item">
+              <h3 class="features__title">Мало туристов</h3>
+              <p class="features__number">№5</p>
+              <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
+            </div>
+          
+            </div>
                     
-                  </li>
-                </ul>
+                  <!--</li>
+                </ul>-->
           </section>
         
           <section class="search">
-            <h2 class="search__title">Заинтересовались?</h2> 
-            <p class="search__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
-                         
-            <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
+
+            <div class="search__container">
+              <h2 class="search__title">Заинтересовались?</h2> 
+              <p class="search__text">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
+            </div>
+
+            <div class="search__container-form">
+              <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
               <h2 class="search__name"> Поиск гостиницы в Седоне </h2>
                  
                 <p class="search__check-in">
@@ -133,23 +177,25 @@
           </main>
 
           <footer class="main-footer">
+            <div class="main-footer__container">
+              <div class="main-footer__hashtag">
+                <p class="main-footer__text">#visitsedona</p>
+              </div>
             
-            <div class="main-footer__hashtag">
-              <p class="main-footer__text">#visitsedona</p>
-            </div>
-            
-            <ul class="social">
+              <div class="social">
                 <li><a class="social__button social__button--twitter"  href="#" aria-label="Read us on Twitter">Twitter</a></li>
                 <li><a class="social__button social__button--Facebook" href="#"aria-label="Follow us on Facebook">Facebook</a></li>
                 <li><a class="social__button social__button--YouTube" href="#" aria-label="Watch us on YouTube">YouTube</a></li>
-            </ul>
+              </div>
             
 
-            <p class="footer-copyright">
+              <p class="footer-copyright">
                 <b>Website by</b> 
                 <img src="#" alt="mini-logo">
                 <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-            </p>
+              </p>
+
+            </div>
           </footer> 
         
   </body>

@@ -40,10 +40,10 @@ body,
 
 }
 .welcome {
-    background-image: url("/img/background.jpg");
+    background-image: url("../img/background.jpg");
     background-position: top center;
     background-repeat: no-repeat;
-    background-color: #ffffff;
+    background-size: cover;
     color: #000000;
 }
 .welcome__title {
@@ -288,6 +288,7 @@ li .info__subitem:first-child{
     line-height: 21px;
     font-weight: bold;
     padding: 8px 16px;
+    
 }
 .сatalog__link:hover {
     background-color: #669ec0;
@@ -308,6 +309,7 @@ li .info__subitem:first-child{
     border: none;
     text-transform: uppercase;
     vertical-align: middle;
+   
 }
 /*Почему у ссылки и у кнопки при одинаковых параметрах 
 получились разные размеры? кнопка на 2 пикселя шире, чем ссылка?*/
@@ -322,6 +324,63 @@ li .info__subitem:first-child{
     background-color: #f2f2f2;
     color: #666666;
 }
+
+/* ----- Сеточные стили ----- */
+
+.main-header {
+    margin-bottom: 55px;
+}
+
+.main-navigation__listcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features__banner1 {
+    display: flex;
+}
+
+.features__sublist1 {
+    display: flex;
+    justify-content: space-between;
+}
+.features__banner2 {
+    display: flex;
+}
+.features__sublist2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*а ничего, что этот класс уже использовался в оформлении?*/
+/*размеры взяла из демки. не забудь исправить*/
+
+.main-footer__hashtag {
+    margin: 0;
+    width: 397px;
+    margin-right: 60px;
+}
+.social {
+    margin: 0;
+    width: 300px;
+}
+.footer-copyright {
+    margin: 0;
+    width: 300px;
+    margin-left: auto;
+}
+
+.main__footer {
+    padding: 60px 0;
+    margin-top: 65px;
+}
+.main-footer__container {
+    display: flex;
+}
+
+
+
 
 
 
