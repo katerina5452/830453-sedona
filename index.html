@@ -12,120 +12,100 @@
   <body>
     
     <header class="main-header">
-      <nav class="main-navigation">
-        
-        
 
-        <div class="main-navigation__listcontainer">
-          <!--<ul class="main-navigation__list"> Список оставить? или li заменить на div???-->
-            <div class="main-navigation__item "><a class="main-navigation__link " href="info.html">Информация</a></div>
-            <div class="main-navigation__item "><a class="main-navigation__link " href="photo.html">Фото и Видео</a></div>
-            
-            <!--логотип вынести из меню!-->
-            <div class="main-navigation__logocontainer">
-                <a class="main-navigation__link " href="index.html">
-                  <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
-                </a>
-              </div>
-            
-              <div class="main-navigation__item "><a class="main-navigation__link " href="map.html">Карта штата</a></div>
-            <div class="main-navigation__item "><a class="main-navigation__link " href="inner.html">Гостиницы</a></div>
-          <!--</ul>-->
-        </div>
+        <a class="main-navigation__link--logo " href="index.html">
+            <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
+        </a>
+
+      <nav class="main-navigation">  
+
+        <ul class="main-navigation__list"> 
+          <li class="main-navigation__item "><a class="main-navigation__link " href="info.html">Информация</a></li>
+          <li class="main-navigation__item "><a class="main-navigation__link " href="photo.html">Фото и Видео</a></li>
+          <li class="main-navigation__item "><a class="main-navigation__link " href="map.html">Карта штата</a></li>
+          <li class="main-navigation__item "><a class="main-navigation__link " href="inner.html">Гостиницы</a></li>
+        </ul>       
 
       </nav>
-    
 
-      <section class="welcome">
-          <img src="img/background.jpg" width="100%" height="" alt="Вид на горы">
-          <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
-          <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-      <!--как сюда вставить белую полосу и корявую белую вставку-->
-        </section>
+    </header>  
+
+    <section class="welcome">
+      <div class="welcome__wrapper">
+      <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      </div>
+    </section>
    
-    </header> 
-    
     <main>
       <section class="features">
         <ul class="features__list">
-
-
-          <div class="features__banner1">    
-            <li class="features__item--banner">
-              <div class="features__description1"> <!--проверить ВСЕЕЕ на БЭМ-->
-                <h3 class="features__title">Настоящий городок</h3>
-                <p class="features__number">№1</p>
-                <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              </div>
-            </li> 
-
-              <div class="features__image1">
-                <img src="img/city sedona.jpg" alt="The city of Sedona">
-              </div>
-          </div>
-
-          <div class="features__sublist1">
-            <!--<ul class="features__sublist">-->
-                  <!--div или li-->  
-              <div class="features__item-point">
-                      <h3 class="features__title">Жилье </h3>
-                      <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </div>
-
-                    <div class="features__item-point">
-                      <h3 class="features__title">Еда</h3>
-                      <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-                    </div>
-
-                    <div class="features__item-point">
-                      <h3 class="features__title">Сувениры</h3>
-                      <p class="features__text">Не только китайского, но и местного производства!</p>
-                    </div>
-
-                 <!-- </ul>
-                </li>-->
-          </div>
-
-          <div class="features__banner2">   
-
-            <div class="features__image2"> 
-              <img src="img/bridge of devil.jpg" alt="The bridge of the devil">
+          
+          <li class="features__item--banner">
+            <div class="features__wrapper">
+            <h3 class="features__title">Настоящий городок</h3>
+            <p class="features__number">№1</p>
+            <p class="features__text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
             </div>
-                    
-            <li class="features__item--banner">
-              <div class="features__description2">
-                <h3 class="features__title">Там есть мост дьявола</h3>
-                <p class="features__number">№2</p>
-                <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-              </div>
-            </li>
+            <img class="features__picture--city" src="img/city sedona.jpg" alt="The city of Sedona">
+            
+          </li>
+          
+            <ul class="features__sublist">
+              <li class="features__item-point">
+                <h3 class="features__title">Жилье </h3>
+                <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              </li>
 
-          </div>
+              <li class="features__item-point">
+                <h3 class="features__title">Еда</h3>
+                <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              </li>
 
-          <div class="features__sublist2">
-                      
-            <div class="features__item">
+              <li class="features__item-point">
+                <h3 class="features__title">Сувениры</h3>
+                <p class="features__text">Не только китайского, но и местного производства!</p>
+              </li>
+            </ul>
+          
+           
+           
+          <li class="features__item--banner">
+             <img class="features__picture--bridge" src="img/bridge of devil.jpg" alt="The bridge of the devil">
+             <div class="features__wrapper">
+             <h3 class="features__title">Там есть мост дьявола</h3>
+            <p class="features__number">№2</p>
+            <p class="features__text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+             </div>  
+          </li>
+<div class="test">
+          <li class="features__item">
+              <div class="features__wrapper">
               <h3 class="features__title">Небольшая площадь</h3>
               <p class="features__number">№3</p>
               <p class="features__text">Все достопримечательности находятся очень близко</p>
-            </div>
+              </div>
+            </li>
 
-            <div class="features__item">
+            <li class="features__item">
+                <div class="features__wrapper">
               <h3 class="features__title">Красивая дорога</h3>
               <p class="features__number">№4</p>
               <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
             </div>
+            </li>
 
-            <div class="features__item">
+            <li class="features__item">
+                <div class="features__wrapper">
               <h3 class="features__title">Мало туристов</h3>
               <p class="features__number">№5</p>
               <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
             </div>
-          
+            </li>
             </div>
-                    
-                  <!--</li>
-                </ul>-->
+          </ul>
+                               
+          
           </section>
         
           <section class="search">
