@@ -12,9 +12,9 @@
    
     <header class="main-header">
         <nav class="main-navigation">
-                <a class="main-navigation__link" href="index.html">
-                    <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
-                </a>
+                <a class="main-navigation__link--logo " href="index.html">
+                        <img class="main-navigation__logo" src="img/logo.jpg" width="140" height="72" alt="Logo of Sedona">
+                    </a>
 
             <ul class="main-navigation__list">
               <li class="main-navigation__item"><a class="main-navigation__link" href="info.html">Информация</a></li>
@@ -28,11 +28,13 @@
     <main>
         <section class="filter">
             <h1 class="visually-hidden">Фильтры</h1>
+
+            <div class="filter__wrapper">
             <form class="filter__edit" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset class="filter__fieldset">
-                    <legend class="filter__legend">Инфраструктура</legend>
+               
+                
                         <ul class="filter__list">
-                            <li class="filter__item">Инфраструктура
+                            <li class="filter__item">Инфраструктура:
                                 <ul class="filter__sublist">
                                     <li class="filter__subitem">
                                         <input type="checkbox" class="filter__checkbox" name="pool" id="pool" checked>
@@ -50,11 +52,12 @@
                             </li>
                         </ul>
                 </fieldset>
+           
 
-                <fieldset class="filter__fieldset">
-                    <legend class="filter__legend">Тип жилья</legend>
+             
+                
                         <ul class="filter__list">
-                            <li class="filter__item">Тип жилья
+                            <li class="filter__item">Тип жилья:
                                 <ul class="filter__sublist">
                                     <li class="filter__subitem">
                                         <input type="checkbox" class="filter__checkbox" checked name="hotel" id="hotel">
@@ -73,12 +76,14 @@
                         </ul>
                       
                 </fieldset>
+                
             </form>
-           
-                                           
+           </div>
+            <div class="filter__rate">                      
                 <p class="filter__text">Стоимость в сутки (Р):</p>
             <!--Здесь будет бегунок с табличкой-->
             <button class="filter__button">Показать</button>
+            </div>
 
         </section>
 
@@ -97,18 +102,34 @@
         </section>
 
         <section class="catalog">
+            
             <div class="catalog__list">
+               
                 <div class="catalog__item">
-                    <img src="img/Amara.jpg" alt="Фотография гостиницы Amara resort">
+                   
+                    <img class="catalog__picture" src="img/Amara.jpg" alt="Фотография гостиницы Amara resort">
+                 
+                    <div class="catalog-test">
                     <h2 class="catalog__title"><a class="catalog__hotel" href="#">Amara resort &#38; spa</a></h2>
+                    
+                    <div class="catalog-test1">
+                    
                     <p class="catalog__text">Гостиница</p>
                     <p class="catalog__text">ОТ 4000 Р.</p>
                 <!-- звездочки 5*img из спрайта????-->
+                </div>
+                <div class="catalog-test2">
                     <a class="сatalog__link"  href="#">Подробнее</a>
                     <button class="catalog__button">Забронировать</button>
-                    <p class="catalog__rate">Рейтинг: 8,5</p>
                 </div>
-
+                </div>    
+                    
+                <div class="test-3">
+                    <p class="catalog__rate">Рейтинг: 8,5</p>
+                    </div>
+                </div>
+                
+                <hr>
                 <div class="catalog__item">
                     <img src="img/desert.jpg" alt="Фотография Мотеля Desert Quail Inn">
                     <h2 class="catalog__title"><a class="catalog__hotel" href="#">Desert Quail Inn</a></h2>
