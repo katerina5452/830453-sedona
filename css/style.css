@@ -12,6 +12,7 @@ body,
     background-color: #ffffff;
     width: 1200px;
   }
+
   a {
     text-decoration: none;
   }
@@ -22,7 +23,8 @@ body,
       line-height: 26px;
       font-weight: bold;
       color: #000000;
-      background-color: #ffffff;
+      z-index: 5;
+      position: relative;
         
 }
 
@@ -40,8 +42,15 @@ body,
     color: #999999;
 /*нужно уточнить цвет
 */
-
 }
+.main-navigation__link--logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+
 .welcome {
     background-image: url("../img/welcome.jpg");
     background-position: top center;
@@ -210,7 +219,9 @@ body,
     background-image: url(../img/fbg.png);
     background-repeat: no-repeat;
     background-size:  cover; 
+    background-position: top center;
     width: 100%;
+    height: 255px;
 }
 /*не растягивается на всю ширину*/
 
@@ -221,7 +232,7 @@ body,
     font-weight: bold;
 }
 
-.ffilter__subitem {
+.filter__subitem {
     color: #ffffff;
     font-size: 14px;
     line-height: 21px;
@@ -281,6 +292,13 @@ li .info__subitem:first-child{
 .catalog__hotel:active {
     color: rgba(0, 0, 0, 0.5);
 }
+.catalog__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+    
+}
 .сatalog__link {
     text-align: center;
     color: #ffffff;
@@ -320,9 +338,6 @@ li .info__subitem:first-child{
     
    
 }
-/*Почему у ссылки и у кнопки при одинаковых параметрах 
-получились разные размеры? кнопка на 2 пикселя шире, чем ссылка?*/
-
 .catalog__button:hover {
     background-color: #604e43;
 }
@@ -336,10 +351,7 @@ li .info__subitem:first-child{
 
 /* ----- Сеточные стили ----- */
 
-/*Главное меню: четыре ячейки одинаковой ширины.
- Для первых двух пунктов выравнивание текста по левому краю, для двух последних — по правому.*/
-
- .main-navigation__list {
+.main-navigation__list {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
@@ -349,8 +361,23 @@ li .info__subitem:first-child{
     margin-right: 100px;
 }
 .main-navigation__item:nth-child(3) {
-    margin-right: 100px;
+    margin-left: 100px;
 }
+.main-navigation__item:nth-child(n+2) {
+    display: flex;
+    justify-content: flex-end;
+}
+.main-navigation__item:nth-child(-n+2) {
+    display: flex;
+    justify-content: flex-start;
+}
+.main-navigation__item:nth-child(4) {
+    margin-right: 70px;
+}
+.main-navigation__item:nth-child(1) {
+    margin-left: 70px;
+}
+
 .main-navigation__item {
     width: 250px;
     height: 50px;
@@ -360,7 +387,7 @@ li .info__subitem:first-child{
   justify-content: center;
  }
 .main-header {
-    height: 50px;
+   height: 50px;
 }
 
 .welcome__wrapper {
@@ -378,7 +405,7 @@ li .info__subitem:first-child{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 400px;
+    max-width: 400px;
     padding: 50px 46px;
 }
 
@@ -443,34 +470,47 @@ li .info__subitem:first-child{
 }
 .filter__list {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
    
 }
 .filter__sublist {
     list-style: none;
+      
 }
 .filter__subitem {
     margin-left: -40px;
-
+    justify-content: space-between;
+    
 }
 
 .info {
     height: 85px;
     display: flex;
     justify-content: baseline;
+
 }
 .info__sublist {
     display: flex;
+    justify-content: space-between;
     
 }
 .info__item {
     display: flex;
+    justify-content: space-between;
+    
 }
+
+
 
 .catalog__item {
     display: flex;
     align-items: center; 
     height: 150px;
     border-top: 2px solid #e5e5e5;
+    max-width: 1205px;
 
 }
 .catalog__item:last-child {
@@ -501,22 +541,27 @@ li .info__subitem:first-child{
     flex-direction: column;
     
 }
-.catalog-test1 {
+.catalog-wrapper--text {
     display: flex;
     justify-content: flex-start;
     margin: 0px;
 }
 .catalog__text:first-child {
     margin-right: 40px;
+   
 }
-.catalog-test2 {
+.catalog-wrapper--buttons {
     display: flex;
     margin-bottom: 30px; 
 }
 
-.test-3 {
+.catalog-wrapper--rate {
     display: flex;
    align-items: flex-end;
+   justify-content: flex-end;
+}
+.catalog__rate {
+  
    justify-content: flex-end;
 }
 
