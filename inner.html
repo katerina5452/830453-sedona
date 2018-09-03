@@ -31,63 +31,58 @@
 
     <main>
         <section class="filter">
-            <h1 class="visually-hidden">Фильтры</h1>
-
             <div class="filter__wrapper">
+                       
             <form class="filter__edit" method="get" action="https://echo.htmlacademy.ru">
                
                 
                         <ul class="filter__list">
-                            <li class="filter__item">Инфраструктура:
+                            <li class="filter__item">Инфраструктура:</li>
                                 <ul class="filter__sublist">
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" name="pool" id="pool" checked>
-                                        <label for="pool">Бассейн</label> 
+                                        <input type="checkbox" class="visually-hidden"  name="pool" id="pool" checked>
+                                        <label class="filter__checkbox" for="pool">Бассейн</label> 
                                     </li>
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" name="parking" id="parking">
-                                        <label for="parking">Парковка</label> 
+                                        <input type="checkbox" class="visually-hidden" name="parking" id="parking">
+                                        <label class="filter__checkbox" for="parking">Парковка</label> 
                                     </li>
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" name="WI-FI" id="WI-FI">
-                                        <label for="WI-Fi">WI-FI</label>
+                                        <input type="checkbox" class="visually-hidden"  name="WI-FI" id="WI-FI">
+                                        <label class="filter__checkbox" for="WI-Fi">WI-FI</label>
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                </fieldset>
-           
-
-             
-                
+                        
+                           
                         <ul class="filter__list">
-                            <li class="filter__item">Тип жилья:
+                            <li class="filter__item">Тип жилья:</li>
                                 <ul class="filter__sublist">
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" checked name="hotel" id="hotel">
-                                        <label for="hotel">Гостиница</label> 
+                                        <input type="checkbox" class="visually-hidden"  name="hotel" id="hotel">
+                                        <label for="hotel" class="filter__checkbox">Гостиница</label> 
                                     </li>
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" checked name="motel" id="motel">
-                                        <label for="motel">Мотель</label> 
+                                        <input type="checkbox" class="visually-hidden" checked name="motel" id="motel">
+                                        <label class="filter__checkbox" for="motel">Мотель</label> 
                                     </li>
                                     <li class="filter__subitem">
-                                        <input type="checkbox" class="filter__checkbox" checked name="appartemets" id="appartemets">
-                                        <label for="appartemets">Апартаменты</label>  
+                                        <input type="checkbox" class="visually-hidden" checked name="appartemets" id="appartemets">
+                                        <label class="filter__checkbox" for="appartemets">Апартаменты</label>  
                                     </li>
                                 </ul>
                             </li>
                         </ul>
-                      
-                </fieldset>
-                
+                                                    
             </form>
-           </div>
+           
             <div class="filter__rate">                      
                 <p class="filter__text">Стоимость в сутки (Р):</p>
             <!--Здесь будет бегунок с табличкой-->
             <button class="filter__button">Показать</button>
             </div>
+        </div>
 
         </section>
 
@@ -120,7 +115,7 @@
                     
                     <p class="catalog__text">Гостиница</p>
                     <p class="catalog__text">ОТ 4000 Р.</p>
-                <!-- звездочки 5*img из спрайта????-->
+                
                 </div>
                 <div class="catalog-wrapper--buttons">
                     <a class="сatalog__link"  href="#">Подробнее</a>
@@ -133,28 +128,44 @@
                     </div>
                 </div>
                 
-                <hr>
+                
                 <div class="catalog__item">
-                    <img src="img/desert.jpg" alt="Фотография Мотеля Desert Quail Inn">
+                    <img class="catalog__picture" src="img/desert.jpg" alt="Фотография Мотеля Desert Quail Inn">
+                    <div class="catalog-wrapper">
                     <h2 class="catalog__title"><a class="catalog__hotel" href="#">Desert Quail Inn</a></h2>
-                    <p class="catalog__text">Мотель</p>
+                    <div class="catalog-wrapper--text">
+                    <p class="catalog__text--motel">Мотель</p>
                     <p class="catalog__text">ОТ 3000 Р.</p>
-                    <!-- звездочки 3*img из спрайта????-->
+                </div>
+                <div class="catalog-wrapper--buttons">
                     <a class="сatalog__link"  href="#">Подробнее</a>
                     <button class="catalog__button">Забронировать</button>
+                </div>
+            </div>    
+                
+            <div class="catalog-wrapper--rate">
                     <p class="catalog__rate">Рейтинг: 8,9</p>
+                </div>
                 </div>
 
                 <div class="catalog__item">
-                    <img src="img/villas.jpg" alt="Фотография Villas at poco Diablo">
+                    <img class="catalog__picture" src="img/villas.jpg" alt="Фотография Villas at poco Diablo">
+                    <div class="catalog-wrapper">
                     <h2 class="catalog__title"><a class="catalog__hotel" href="#">Villas at poco Diablo</a></h2>
-                    <p class="catalog__text">Апартаменты</p>
+                    <div class="catalog-wrapper--text">
+                    <p class="catalog__text-apparts">Апартаменты</p>
                     <p class="catalog__text">ОТ 2000 Р.</p>
-                    <!-- звездочки 2*img из спрайта????-->
+                </div>
+                <div class="catalog-wrapper--buttons">
                     <a class="сatalog__link"  href="#">Подробнее</a>
                     <button class="catalog__button">Забронировать</button>
+                </div>
+            </div>    
+                
+            <div class="catalog-wrapper--rate">
                     <p class="catalog__rate">Рейтинг: 9,2</p>
                 </div>
+            </div>
             </div>
         </section>
 
@@ -162,24 +173,27 @@
 
     </main>
 
-        <footer class="main-footer">
-            
-            <div class="main-footer__hashtag">
-              <p class="main-footer__text">#visitsedona</p>
-            </div>
-            
-            <ul class="social">
-                    <li><a class="social__button social__button--twitter"  href="#" aria-label="Read us on Twitter">Twitter</a></li>
-                    <li><a class="social__button social__button--Facebook" href="#"aria-label="Follow us on Facebook">Facebook</a></li>
-                    <li><a class="social__button social__button--YouTube" href="#" aria-label="Watch us on YouTube">YouTube</a></li>
-                </ul>
+    <footer class="main-footer">
+        <div class="main-footer__container">
+          <div class="main-footer__hashtag">
+            <p class="main-footer__text">#visitsedona</p>
+          </div>
+        
+          <div class="social">
+            <li><a class="social__button social__button--twitter"  href="#" aria-label="Read us on Twitter">Twitter</a></li>
+            <li><a class="social__button social__button--Facebook" href="#"aria-label="Follow us on Facebook">Facebook</a></li>
+            <li><a class="social__button social__button--YouTube" href="#" aria-label="Watch us on YouTube">YouTube</a></li>
+          </div>
+        
 
-            <p class="footer-copyright">
-                <b>Website by</b> 
-                <img src="#" alt="mini-logo">
-                <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-            </p>
-          </footer> 
+          <p class="footer-copyright">
+            <b>Website by</b> 
+            <img src="#" alt="mini-logo">
+            <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+          </p>
+
+        </div>
+      </footer> 
     
 </body>
 </html>
