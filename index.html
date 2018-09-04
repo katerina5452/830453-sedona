@@ -53,16 +53,19 @@
           
             <ul class="features__sublist">
               <li class="features__item-point">
+                <img class="features__icon" src="img/icon-1.jpg" width="79px" height="84px">
                 <h3 class="features__title">Жилье </h3>
                 <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
 
               <li class="features__item-point">
+                  <img class="features__icon" src="img/icon-3.jpg" width="85px" height="84px">
                 <h3 class="features__title">Еда</h3>
                 <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
 
               <li class="features__item-point">
+                  <img class="features__icon" src="img/icon-2.jpg" width="79px" height="84px">
                 <h3 class="features__title">Сувениры</h3>
                 <p class="features__text">Не только китайского, но и местного производства!</p>
               </li>
@@ -117,28 +120,36 @@
 
             <div class="search__container-form">
               <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
-              <h2 class="search__name"> Поиск гостиницы в Седоне </h2>
+              <a href="#" class="search__name"> Поиск гостиницы в Седоне </a>
                  
                 <p class="search__check-in">
-                  <label name="Дата заезда" for="check-in">Дата заезда</label>
-                    <input class="search__input" type="text" name="check-in" placeholder="24 апреля 2017" id="check-in">
+                  <label class="search__label" name="Дата заезда" for="check-in">Дата заезда</label>
+                    <input class="search__input--long" type="text" name="check-in" placeholder="24 апреля 2017" id="check-in">
                   
                 </p>
                 
                 <p class="search__out">
-                  <label name="Дата выезда" for="check-out">Дата выезда</label>
-                    <input class="search__input"  type="text" name="check-out" placeholder="04 июля 2017" id="check-out">
+                  <label class="search__label" name="Дата выезда" for="check-out">Дата выезда</label>
+                    <input class="search__input--long"  type="text" name="check-out" placeholder="04 июля 2017" id="check-out">
                 </p>
+              </span class="search__amount">
+                <p class="search__amount--adults">
+                <label class="search__label search__label--adults" name="adults" for="adults-number">Взрослые</label>
+                <input type="button" value="-">  
+                <input class="search__input--short" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
+                <input type="button" value="+">
+              </p>
 
-                <label name="adults" for="adults-number">Взрослые</label>
-                  <input class="search__input" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
-                
-
-                <label name="kids" for="kids-number">Дети</label>
-                  <input class="search__input"  type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
-                
+                <p class="search__amount--kids">
+                <label class="search__label search__label--kids" name="kids" for="kids-number">Дети</label>
+                  <input type="button" value="-">
+                  <input class="search__input--short"  type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
+                  <input type="button" value="+">
+                </p>
+              </span>
                 <p>
-                  <form action="inner.html">
+
+                  <form class="search__button--wrapper" action="inner.html">
                     <button class="search__button" type="submit">Найти</button>
                   </form>
                 </p>
@@ -162,17 +173,35 @@
                 <p class="main-footer__text">#visitsedona</p>
               </div>
             
-              <div class="social">
-                <li><a class="social__button social__button--twitter"  href="#" aria-label="Read us on Twitter">Twitter</a></li>
-                <li><a class="social__button social__button--Facebook" href="#"aria-label="Follow us on Facebook">Facebook</a></li>
-                <li><a class="social__button social__button--YouTube" href="#" aria-label="Watch us on YouTube">YouTube</a></li>
-              </div>
+              <ul class="social">
+                <li>
+                  <a class="social__button social__button--twitter"  href="#" aria-label="Read us on Twitter">
+                    <span class="visually-hidden">Twitter</span> 
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
+                  </a>
+              </li>
+
+                <li>
+                  <a class="social__button social__button--Facebook" href="#"aria-label="Follow us on Facebook">
+                    <span class="visually-hidden">Facebook</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22"><path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/></svg>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="social__button social__button--YouTube" href="#" aria-label="Watch us on YouTube"><span class="visually-hidden">YouTube</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16"><path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/></svg>
+                  </a>
+                </li>
+
+              </ul>
             
 
               <p class="footer-copyright">
                 <b>Website by</b> 
-                <img src="#" alt="mini-logo">
-                <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+                <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                  <img src="img/logo-htmlacademy.svg" alt="mini-logo" width="122px" height="43px">
+                </a>
               </p>
 
             </div>

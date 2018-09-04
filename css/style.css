@@ -25,11 +25,12 @@ body,
       color: #000000;
       z-index: 5;
       position: relative;
-        
+             
 }
 
 .main-navigation__list {
     list-style: none;
+    
 }
 .main-navigation__list a{
     color: #000000;
@@ -87,6 +88,16 @@ body,
     line-height: 26px;
     text-align: center;
 }
+
+.features__icon {
+    display: block; 
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 57px;
+    margin-bottom: 32px;
+    
+}
 .features__title {
     font-size: 21px;
     font-weight: bold;
@@ -102,7 +113,22 @@ body,
     color: #ffffff;
     background-color: #81b3d2;
 }
+.features__item {
+    background-color: #eeeeee;
+}
 
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search__container-form {
+    width: 570px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .search__title {
     font-size: 30px;
     font-weight: bold;
@@ -117,7 +143,10 @@ body,
     text-align: center;
     color: #ffffff;
     background-color: #766357;
-    padding: 30px;
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-bottom: 33px;
+    padding-top: 33px;
 }
 .search__name:hover {
     background-color: #604e43;
@@ -132,26 +161,119 @@ body,
     text-align: center;
 }
 .search__form {
-    text-align: center;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
 }
-.search__button {
+
+.search__check-in {
+    display: flex;
+    width: 466px;
+   
+  margin-bottom: 28px;
+  margin-top: 50px;
+  justify-content: space-between;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+.search__out {
+    display: flex;
+    width: 466px;
+    margin-bottom: 30px;
+    
+    justify-content: space-between;
+    margin-left: 55px;
+    margin-right: 55px;
+}
+.search__amount {
+    display: flex;
+    width: 466px;
+    margin-bottom: 30px;
+    justify-content: center;
+   
+}
+.search__amount--adults {
+    width: 233px;
+    display: flex;
+    margin-left: 55px;
+     
+    
+}
+.search__amount--kids {
+    width: 233px;
+    display: flex;
+  
+    margin-right: 55px;
+    }
+
+.search__label {
+    display: block;
+    margin-bottom: 9px;
+  margin-left: 15px;
+  
+}
+.search__label--adults {
+    margin-right: 40px;
+    
+}
+.search__label--kids {
+    margin-right: 27px;
+    margin-left: 55px;
+}
+.search__input--long {
     font: inherit;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+  width: 347px;
+  height: 30px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+}
+.search__input--short {
+    font: inherit;
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+   height: 30px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+}
+
+.search__button {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
     text-align: center;
     color: #ffffff;
-    vertical-align: middle;
+    
     text-transform: uppercase;
     background-color:#81b3d2;
     border: none;
-}
+    
+    margin-left: 55px;
+    margin-right: 55px;
+    
+    padding-left: 195px;
+    padding-right: 195px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+    box-sizing: content-box;
+
+    
+   }
+  
 .search__button:hover {
     background-color: #669ec0;
 
 }
 
-.search__input {
-    font: inherit;
-    background-color: #f2f2f2;
-}
+
 .search__button:active {
     background-color: rgba(84, 150, 189, 0.5);
 }
@@ -164,46 +286,71 @@ body,
 .main__footer {
     color: #000000;
     background-color: #ffffff;
+    
+}
+.main-footer__hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-footer__text {
     font-size: 21px;
     font-weight: bold;
-    line-height: auto;
-    text-align: center;
+    line-height: 26px;
+    
+    
 }
 .social {
     list-style: none;
-    text-align: center;
+    flex-wrap: wrap;
+  justify-content: center;
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+  padding: 0;
+  align-items: center;
         
 }
-.footer-copyright {
-    font-size: 14px;
-    line-height: 26px;
-}
+
+
 .social__button {
     font: inherit;
     color: #ffffff;
     background-color: #81b3d2;
-}
-.footer-copyright{
-    font-size: 14px;
-    line-height: 26px;
-    text-align: center;
-}
-.social {
+    width: 46px;
+    height: 48px;
     display: flex;
-    justify-content: space-around;
-    
+    align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  padding: 0;
 }
-.social__button:hover {
+
+
+
+.social__button:hover,
+.social-button:focus {
     background-color: #669ec0;
         
 }
 .social__button:active {
     background-color: rgba(84, 150, 189, 0.5);
 }
+.social__button:active path {
+    background-color: rgba(84, 150, 189, 0.5);
+}
+
+.footer-copyright b{
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+    margin-bottom: 15px;
+
+}
 .footer-copyright a {
     color: #000000;
+    margin-left: 9px; 
 }
 .footer-copyright a:hover {
     color: #81b3d2;
@@ -211,6 +358,9 @@ body,
 .footer-copyright a:active {
     color: #bdbbbc;
 }
+
+
+
 .inner-page {
     color: #000000;
     background-color: #ffffff;
@@ -223,7 +373,7 @@ body,
     width: 100%;
     height: 255px;
 }
-/*не растягивается на всю ширину*/
+
 
 .filter__item  {
     color: #ffffff;
@@ -362,7 +512,8 @@ li .info__subitem:first-child{
 .main-navigation__list {
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
+    align-content: center;
 }
 
 .main-navigation__item:nth-child(2) {
@@ -396,6 +547,7 @@ li .info__subitem:first-child{
  }
 .main-header {
    height: 50px;
+   
 }
 
 .welcome__wrapper {
@@ -425,17 +577,7 @@ li .info__subitem:first-child{
     display: flex;
 } 
 
-.search {
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    align-items: center;
-}
-.search__container-form {
-    width: 570px;
-    height: 480px;
-    
-}
+
 
 /*размеры взяла из демки. не забудь исправить*/
 
@@ -444,14 +586,14 @@ li .info__subitem:first-child{
     width: 397px;
     margin-right: 60px;
 }
-.social {
-    margin: 0;
-    width: 300px;
-}
+
+
 .footer-copyright {
     margin: 0;
     width: 300px;
     margin-left: auto;
+    display: flex;
+    align-items: center;
 }
 
 .main__footer {
@@ -472,8 +614,8 @@ li .info__subitem:first-child{
 .filter__rate {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
     margin-left: auto;
     margin-right: 168px;
     
@@ -486,10 +628,14 @@ li .info__subitem:first-child{
     justify-content: space-between;
     margin-top: 29px;
     margin-bottom: 30px;
+    margin-left: 71px;
    
 }
 .filter__sublist {
     list-style: none;
+    padding: 0;
+  margin: 0;
+  padding-left: 45px;
     
       
 }
@@ -578,14 +724,6 @@ li .info__subitem:first-child{
 
   margin-right: 42px;
 }
-.catalog__text--motel {
-    margin-right: 63px;
- 
-}
-.catalog__text-apparts {
-    margin-right: 22px;
-   
-}
 
 .catalog-wrapper--buttons {
     display: flex;
@@ -604,17 +742,43 @@ li .info__subitem:first-child{
    justify-content: flex-end;
 }
 
+.filter__checkbox {
+    position: relative;
 
-.filter__checkbox::before {
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter__input + .filter__checkbox::before {
     content: "";
     position: absolute;
   
-    width: 22px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
   
-    border: 2px solid #ffffff;
-   left: 40px;
+    background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+    left: -40px;
+     
 }
+.filter__input--checked:checked + .filter__checkbox::after {
+    content: "";
+   
+    position: absolute;
+  
+    width: 25px;
+    height: 25px;
+    
+    top: 2px;
+    left: -40px;
+    background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  
+  }
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
