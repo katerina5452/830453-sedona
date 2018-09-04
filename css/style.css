@@ -404,6 +404,133 @@ body,
     background-color: #ffffff;
     color: #000000;
 }
+
+.filter__range {
+    width: 330px;
+    margin-right: 72px;
+    margin-top: 30px;
+    margin-left: auto;
+  
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+.filter__range--title {
+    margin-bottom: 9px;
+  
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    
+
+  }
+  .price__controls {
+    height: 36px;
+    margin-bottom: 20px;
+    font-size: 0;
+    position: relative;
+
+  
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  .price__controls::after {
+    content: "";
+    position: absolute;
+  
+    width: 2px;
+    height: 22px;
+  
+    background: #ffffff;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+ 
+  }
+  .price__controls label {
+    display: inline-block;
+  
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+  
+    cursor: pointer;
+  }
+  .price__controls .min-price,
+.price__controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+.price__controls input {
+    width: 50px;
+    margin: 0;
+  
+    color: inherit;
+    font: inherit;
+  
+    background: none;
+    border: none;
+  }
+  .range__controls {
+    position: relative;
+  
+    margin-bottom: 32px;
+  }
+  .range__controls .scale {
+    height: 2px;
+  
+    background: rgba(255, 255, 255, 0.3);
+  }
+  .range__controls .bar {
+    width: 80%;
+    height: 2px;
+  
+    background: #ffffff;
+  }
+  .range-toggle {
+    width: 4px;
+    height: 4px;
+  
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    
+  }
+  .range-toggle-min {
+    left: 0;
+  }
+  
+  .range-toggle-max {
+    left: 80%;
+  }
+  .range-toggle:hover {
+    background: #1c4f80;
+  }
+  .btn__transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+  
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+  }  
+  .btn__transparent:hover {
+    color: #000000;
+  
+    background: #ffffff;
+  }
 .info__title {
     font-size: 21px;
     line-height: 26px;
