@@ -124,12 +124,24 @@ a {
     margin-top: 30px
     
 }
+
+.features__list {
+    display: flex;
+    flex-wrap: wrap;
+      
+}
+.features__item--banner {
+    flex-basis: 100%; 
+}
+.features__item{
+    flex-basis: 33.3%;
+}
 .features__icon {
     display: block;
-    text-align: center;
+    
     margin-left: auto;
     margin-right: auto;
-    margin-top: 57px;
+    margin-top: 65px;
     margin-bottom: 32px;
 }
 .features__title {
@@ -150,13 +162,18 @@ a {
     max-width: 302px;
     margin: 0;
 }
-.features__item--banner{
+.features__item--banner {
     color: #ffffff;
     background-color: #81b3d2;
 }
 .features__item {
     background-color: #eeeeee;
 }
+.features__item:nth-child(-n+4) {
+    background-color: #ffffff;
+ }
+
+
 .search {
     display: flex;
     flex-direction: column;
