@@ -252,18 +252,18 @@ a {
     display: flex;
     width: 466px;
     margin-bottom: 28px;
-    margin-top: 50px;
+    margin-top: 60px;
     justify-content: space-between;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .search__out {
     display: flex;
     width: 466px;
     margin-bottom: 30px;
     justify-content: space-between;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .search__amount {
     display: flex;
@@ -274,45 +274,62 @@ a {
 .search__amount--adults {
     width: 233px;
     display: flex;
-    margin-left: 55px;
+    margin-left: 47px;
 }
 .search__amount--kids {
     width: 233px;
     display: flex;
-    margin-right: 55px;
+    margin-right: 47px;
 }
 .search__label {
-    display: block;
+   
     margin-bottom: 9px;
     margin-left: 15px;
+    padding-left: 5px;
+   
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
 }
 .search__label--adults {
-    margin-right: 40px;
+    margin-right: 25px;
+    margin-left: 47px;
 }
 .search__label--kids {
-    margin-right: 27px;
-    margin-left: 55px;
+    margin-right: 47px;
+    margin-left: 56px;
 }
 .search__input--long {
     font: inherit;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    width: 347px;
-    height: 30px;
+    width: 345px;
+    height: 38px;
     padding-top: 8px;
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 15px;
     padding-bottom: 7px;
+  
+   
+
+    border: none;
+    background-image: url("../img/calendar.svg");
+    background-position: 315px center;
+    background-repeat: no-repeat;
+    
+     
 }
+
 .search__input--short {
     font: inherit;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    height: 30px;
-    padding-top: 8px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 7px;
+    height: 40px;
+    padding-top: 14px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 14px;
+    border: none;
 }
 .search__button {
     font-size: 21px;
@@ -323,14 +340,20 @@ a {
     text-transform: uppercase;
     background-color:#81b3d2;
     border: none;
-    margin-left: 55px;
-    margin-right: 55px;
+    margin-left: 58px;
+    margin-right: 58px;
+    margin-top: 15px;
     padding-left: 195px;
     padding-right: 195px;
     padding-top: 17px;
     padding-bottom: 22px;
     box-sizing: content-box;
+    height: 20px;
 }
+.search__plus-minus {
+    border: none;
+}
+
 .search__button:hover {
     background-color: #669ec0;
 }
@@ -343,14 +366,17 @@ a {
 .search__input:focus {
     background-color: #ffffff;
 }
-.main__footer {
+.main-footer {
     color: #000000;
     background-color: #ffffff;
+    margin-top: 30px;
+    margin-bottom: 36px; 
 }
 .main-footer__hashtag {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 397px;
 }
 .main-footer__text {
     font-size: 21px;
@@ -360,12 +386,16 @@ a {
 .social {
     list-style: none;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 200px;
+    justify-content: space-between;
+    align-items: center;
     display: flex;
     margin: 0 auto;
     padding: 0;
-    align-items: center;
+    width: 160px;
+    margin-top: 10px;
+    margin-bottom: 36px;
+    
+   
 }
 .social__button {
     font: inherit;
@@ -394,6 +424,13 @@ a {
     text-align: center;
     display: block;
     margin-bottom: 15px;
+}
+.footer-copyright {
+    margin: 0;
+    width: 300px;
+    margin-left: 88px;
+    display: flex;
+    align-items: center;
 }
 .footer-copyright a {
     color: #000000;
@@ -750,22 +787,9 @@ li .info__subitem:first-child{
     display: flex;
 }
 /*размеры взяла из демки. не забудь исправить*/
-.main-footer__hashtag {
-    margin: 0;
-    width: 397px;
-    margin-right: 60px;
-}
-.footer-copyright {
-    margin: 0;
-    width: 300px;
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-.main__footer {
-    padding: 60px 0;
-    margin-top: 65px;
-}
+
+
+
 .main-footer__container {
     display: flex;
 }
@@ -882,6 +906,7 @@ li .info__subitem:first-child{
     background-repeat: no-repeat;
     background-position: 0 0;
     left: -40px;
+    top: 2px;
 }
 .filter__input:checked + .filter__checkbox::before {
     content: "";
