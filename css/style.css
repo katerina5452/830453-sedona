@@ -190,6 +190,7 @@ a {
 .features__item {
     background-color: #eeeeee;
 }
+
 .features__item:nth-child(-n+4) {
     background-color: #ffffff;
  }
@@ -210,7 +211,11 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    z-index: 5;
+    
 }
+
 .search__title {
     font-size: 30px;
     font-weight: bold;
@@ -252,10 +257,11 @@ a {
     display: flex;
     width: 466px;
     margin-bottom: 28px;
-    margin-top: 60px;
+    margin-top: 55px;
     justify-content: space-between;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 60px;
+   
 }
 .search__out {
     display: flex;
@@ -263,7 +269,7 @@ a {
     margin-bottom: 30px;
     justify-content: space-between;
     margin-left: 40px;
-    margin-right: 40px;
+    margin-right: 60px;
 }
 .search__amount {
     display: flex;
@@ -292,12 +298,13 @@ a {
     font-weight: bold;
 }
 .search__label--adults {
-    margin-right: 25px;
-    margin-left: 47px;
+    margin-right: 30px;
+    margin-left: 53px;
+
 }
 .search__label--kids {
     margin-right: 47px;
-    margin-left: 56px;
+    margin-left: 80px;
 }
 .search__input--long {
     font: inherit;
@@ -308,13 +315,13 @@ a {
     padding-top: 8px;
     padding-left: 20px;
     padding-right: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 8px;
   
    
 
     border: none;
     background-image: url("../img/calendar.svg");
-    background-position: 315px center;
+    background-position: 320px center;
     background-repeat: no-repeat;
     
      
@@ -324,12 +331,17 @@ a {
     font: inherit;
     background-color: #f2f2f2;
     box-sizing: border-box;
-    height: 40px;
-    padding-top: 14px;
-    padding-left: 22px;
-    padding-right: 22px;
-    padding-bottom: 14px;
+    height: 38px;
+    width: 115px;
+    text-align: center;
+   
     border: none;
+
+}
+input::-webkit-input-placeholder{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000000;
 }
 .search__button {
     font-size: 21px;
@@ -352,6 +364,10 @@ a {
 }
 .search__plus-minus {
     border: none;
+    width: 39px;
+    padding-left: 12px;
+    padding-right: 12px;
+    background-color: #f2f2f2;
 }
 
 .search__button:hover {
@@ -382,6 +398,7 @@ a {
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
+    margin-top: -15px;
 }
 .social {
     list-style: none;
@@ -408,6 +425,7 @@ a {
     justify-content: center;
     margin-right: 6px;
     padding: 0;
+    margin-top: -5px;
 }
 .social__button:hover, .social-button:focus {
     background-color: #669ec0;
@@ -424,6 +442,7 @@ a {
     text-align: center;
     display: block;
     margin-bottom: 15px;
+    margin-top: -25px;
 }
 .footer-copyright {
     margin: 0;
@@ -435,6 +454,7 @@ a {
 .footer-copyright a {
     color: #000000;
     margin-left: 9px;
+    margin-top: -30px;
 }
 .footer-copyright a:hover {
     color: #81b3d2;
@@ -483,8 +503,8 @@ a {
     color: #000000;
 }
 .filter__range {
-    width: 330px;
-    margin-right: 60px;
+    width: 350px;
+    margin-right: 40px;
     margin-top: 30px;
     margin-left: auto;
     color: #ffffff;
@@ -514,13 +534,15 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    
 }
 .price__controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+  
     vertical-align: middle;
     cursor: pointer;
+    
 }
 .price__controls .min-price, .price__controls .max-price {
     width: 90px;
@@ -537,10 +559,13 @@ a {
 .range__controls {
     position: relative;
     margin-bottom: 32px;
+    width: 315px;
 }
+
 .range__controls .scale {
     height: 2px;
     background: rgba(255, 255, 255, 0.3);
+    
 }
 .range__controls .bar {
     width: 80%;
@@ -579,6 +604,7 @@ a {
     border: 2px solid #ffffff;
     border-radius: 2px;
     cursor: pointer;
+    margin-left: 85px;
 }
 .btn__transparent:hover {
     color: #000000;
@@ -642,6 +668,7 @@ li .info__subitem:first-child{
     justify-content: space-around;
     margin-left: auto;
     margin-right: 74px;
+    margin-top: -60px;
 }
 .catalog__hotel {
     color: #000000;
@@ -660,6 +687,7 @@ li .info__subitem:first-child{
     color: #000000;
     background-color: #ffffff;
 }
+
 .сatalog__link {
     text-align: center;
     color: #ffffff;
@@ -718,6 +746,7 @@ li .info__subitem:first-child{
     width: 109px;
     text-align: center;
     display: block;
+    margin-bottom: -40px;
 }
 /* ----- Сеточные стили ----- */
 .main-navigation__list {
@@ -769,6 +798,9 @@ li .info__subitem:first-child{
     margin-right: auto;
     margin-left: 57px;
 }
+.features__wrapper-last {
+    margin-left: 0;
+}
 .features__item-wrapper {
     max-width: 400px;
     margin-top: 0px;
@@ -786,7 +818,6 @@ li .info__subitem:first-child{
 .features__item--wrapper {
     display: flex;
 }
-/*размеры взяла из демки. не забудь исправить*/
 
 
 
@@ -823,11 +854,12 @@ li .info__subitem:first-child{
     list-style: none;
     padding: 0;
     margin: 0;
-    padding-left: 45px;
+    padding-left: 40px;
+    margin-top: 22px;
 }
 .filter__subitem {
     justify-content: space-between;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
 }
 .info {
     height: 85px;
@@ -855,13 +887,11 @@ li .info__subitem:first-child{
     border-bottom: 2px solid #e5e5e5;
 }
 .catalog__title {
-    margin-top: 30px;
+    margin-top: 0px;
+    padding-top: 0px;
+   
 }
-.catalog-test {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+
 .catalog__picture {
     margin-left: 73px;
     margin-top: 30px;
@@ -875,18 +905,31 @@ li .info__subitem:first-child{
     padding: 0px;
 }
 .catalog-wrapper {
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
+    
+    
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   
 }
 .catalog-wrapper--text {
     display: flex;
     justify-content: flex-start;
 }
+
 .catalog__text {
     position: relative;
-    margin-right: 42px;
+    margin-right: 38px;
 }
+.catalog__text--price-motel {
+    margin-left: 25px;
+}
+.catalog__text--price-apps{
+    margin-left: -18px;
+}
+
 .catalog-wrapper--buttons {
     display: flex;
     margin-bottom: 30px;

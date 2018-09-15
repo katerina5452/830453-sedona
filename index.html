@@ -79,21 +79,21 @@
             </div>
           </li>
           <li class="features__item">
-              <div class="features__wrapper">
+              <div class="features__wrapper features__wrapper-last">
                 <h3 class="features__title">Небольшая площадь</h3>
                 <p class="features__number">№3</p>
                 <p class="features__text">Все достопримечательности находятся очень близко</p>
               </div>
             </li>
-            <li class="features__item">
-              <div class="features__wrapper">
+            <li class="features__item ">
+              <div class="features__wrapper features__wrapper-last">
                 <h3 class="features__title">Красивая дорога</h3>
                 <p class="features__number">№4</p>
                 <p class="features__text">Ехать из Лас-Вегаса в Седону совсем не скучно!</p>
               </div>
             </li>
-            <li class="features__item">
-              <div class="features__wrapper">
+            <li class="features__item ">
+              <div class="features__wrapper features__wrapper-last">
                 <h3 class="features__title features__title--tourists">Мало туристов</h3>
                 <p class="features__number">№5</p>
                 <p class="features__text">Большинство едет в Гранд-Каньон и толпится там!</p>
@@ -111,30 +111,31 @@
         <div class="search__container-form">
           <form class="search__form" method="get" action="https://echo.htmlacademy.ru">
             <a href="#" class="search__name"> Поиск гостиницы в Седоне </a>
-           
+          
             <div class="search__check-in">
-              <label class="search__label" for="check-in">Дата заезда</label>
+              <label class="search__label" for="check-in">Дата заезда:</label>
               <input class="search__input--long" type="text" name="check-in" placeholder="24 апреля 2017" id="check-in">
               
             </div>
             <div class="search__out">
-              <label class="search__label" for="check-out">Дата выезда</label>
-              <input class="search__input--long" type="text" name="check-out" placeholder="04 июля 2017" id="check-out">
+              <label class="search__label" for="check-out">Дата выезда:</label>
+              <input class="search__input--long" type="text" name="check-out" placeholder="4 июля 2017" id="check-out">
             </div>
             <div class="search__amount">
               <div class="search__amount--adults">
-                <label class="search__label search__label--adults" for="adults-number">Взрослые</label>
+                <label class="search__label search__label--adults" for="adults-number">Взрослые:</label>
                 <input class="search__plus-minus" type="button" value="-">
                 <input class="search__input--short" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
                 <input class="search__plus-minus" type="button" value="+">
               </div>
             
               <div class="search__amount--kids">
-              <label class="search__label search__label--kids" for="kids-number">Дети</label>
+              <label class="search__label search__label--kids" for="kids-number">Дети:</label>
               <input class="search__plus-minus" type="button" value="-">
               <input class="search__input--short" type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
               <input class="search__plus-minus" type="button" value="+">
               </div>
+              
           </div> 
            
           
@@ -149,9 +150,10 @@
       <section class="map">
       <h2 class="visually-hidden">Map</h2>
       <!--<iframe class="map__google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565747955!2d-111.83015810180866!3d34.85444381569597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2spt!4v1536509195872" allowfullscreen></iframe>
-      --><!--<div>
-      <img src="img/map.jpg" width="1200" height="473" alt="Седона расположена в штате Аризона на шоссе № 40.">
-      </div>-->
+      -->
+      <div>
+      <img class="map__picture" src="img/map.jpg" width="1200" height="473" alt="Седона расположена в штате Аризона на шоссе № 40.">
+      </div>
       </section>
       
     </main>
