@@ -526,6 +526,7 @@ input::-webkit-input-placeholder{
 }
 .main-footer__inner {
     margin-top: 30px;
+
 }
 .main-footer__hashtag {
     display: -webkit-box;
@@ -1008,7 +1009,7 @@ li .info__subitem:first-child{
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
-    margin-bottom: 60px;
+    margin-bottom: 53px;
 }
 .features__item-wrapper {
     max-width: 400px;
@@ -1147,7 +1148,7 @@ li .info__subitem:first-child{
     padding: 0px;
 }
 .catalog-wrapper {
-    -webkit-box-sizing: border-box;
+    
             
     margin-top: 26px;
     
