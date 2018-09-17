@@ -10,7 +10,7 @@
    <body class="inner-page">
       <div class="container">
          <header class="main-header">
-            <h1 hidden>Hotels of Sedona</h1>
+            <h1 class="visually-hidden">Hotels of Sedona</h1>
             <a class="main-navigation__link--logo " href="index.html">
             <img class="main-navigation__logo" src="img/logopng.png" width="140" height="72" alt="Logo of Sedona">
             </a>
@@ -25,7 +25,7 @@
          </header>
          <main>
             <section class="filter">
-               <h2 hidden>Filter</h2>
+               <h2 class="visually-hidden">Filter</h2>
                <div class="filter__wrapper">
                   <form class="filter__edit" method="get" action="https://echo.htmlacademy.ru">
                      <ul class="filter__list">
@@ -52,7 +52,7 @@
                            Тип жилья:
                            <ul class="filter__sublist">
                               <li class="filter__subitem">
-                                 <input type="checkbox" class="visually-hidden filter__input" name="hotel" id="hotel">
+                                 <input type="checkbox" class="visually-hidden filter__input" checked name="hotel" id="hotel">
                                  <label for="hotel" class="filter__checkbox">Гостиница</label>
                               </li>
                               <li class="filter__subitem">
@@ -67,8 +67,7 @@
                         </li>
                      </ul>
                   </form>
-                  <!--  <div class="filter__rate">                      
-                     <p class="filter__text">Стоимость в сутки (Р):</p>-->
+                 
                   <div class="filter__range">
                      <div class="filter__range--title">Стоимость в сутки (Р):</div>
                      <div class="price__controls">
@@ -84,20 +83,19 @@
                      </div>
                      <button class="btn__transparent" type="submit">Показать</button>
                   </div>
-                  <!-- <button class="filter__button">Показать</button>
-                     </div>-->
+                  
                </div>
             </section>
             <section class="info">
-               <h2 hidden>Sort</h2>
+               <h2 class="visually-hidden">Sort</h2>
                <p class="info__title">Найдено: 3</p>
                <ul class="info__sort">
                   <li class="info__item">
                      Сортировка:
                      <ul class="info__sublist">
-                        <li class="info__subitem">По цене</li>
-                        <li class="info__subitem">По типу</li>
-                        <li class="info__subitem">По рейтингу</li>
+                        <li class="info__subitem"><a class="info__subitem--link" href="#">По цене</a></li>
+                        <li class="info__subitem"><a class="info__subitem--link" href="#">По типу</a></li>
+                        <li class="info__subitem"><a class="info__subitem--link" href="#">По рейтингу</a></li>
                      </ul>
                   </li>
                </ul>
@@ -115,7 +113,7 @@
                </div>
             </section>
             <section class="catalog">
-               <h2 hidden>Catalog of hotels</h2>
+               <h2 class="visually-hidden">Catalog of hotels</h2>
                <ul class="catalog__list">
                   <li class="catalog__item">
                      <img class="catalog__picture" src="img/Amara.jpg" alt="Фотография гостиницы Amara resort">
@@ -211,7 +209,7 @@
             </section>
          </main>
          <footer class="main-footer__inner">
-            <h2 hidden>Contacts</h2>
+            <h2 class="visually-hidden">Contacts</h2>
             <div class="main-footer__container">
                <div class="main-footer__hashtag">
                   <p class="main-footer__text">#visitsedona</p>

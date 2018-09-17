@@ -10,7 +10,7 @@
    <body>
       <div class="container">
          <header class="main-header">
-            <h1 hidden>Sedona</h1>
+            <h1 class="visually-hidden">Sedona</h1>
             <a class="main-navigation__link--logo " href="index.html">
             <img class="main-navigation__logo" src="img/logopng.png" width="140" height="72" alt="Logo of Sedona">
             </a>
@@ -30,9 +30,9 @@
             </div>
          </section>
          <main>
-            <h2 hidden>features</h2>
+            <h2 class="visually-hidden">features</h2>
             <div class="intro">
-               <h1 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+               <h2 class="welcome__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
                <p class="welcome__p">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
             </div>
             <section class="features">
@@ -98,7 +98,7 @@
                </ul>
             </section>
             <section class=" modal__search search">
-               <h2 hidden>search form</h2>
+               <h2 class="visually-hidden">search form</h2>
                <div class="search__container">
                   <h2 class="search__title">Заинтересовались?</h2>
                   <p class="search__text">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне!</p>
@@ -111,17 +111,21 @@
                      <div class="search__check-in">
                         <label class="search__label" for="check-in">Дата заезда:</label>
                         <input class="search__input--long" type="text" name="check-in" placeholder="24 апреля 2017" id="check-in">
-                     </div>
+                        <svg class="search__calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path  d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"  fill="a9a9a9"/></svg>
+                  </div>
                      <div class="search__out">
                         <label class="search__label" for="check-out">Дата выезда:</label>
                         <input class="search__input--long" type="text" name="check-out" placeholder="4 июля 2017" id="check-out">
-                     </div>
+                        <svg class="search__calendar" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path  d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"  fill="a9a9a9"/></svg>
+                        
+                             
+                  </div>
                      <div class="search__amount">
                         <div class="search__amount--adults">
                            <label class="search__label search__label--adults" for="adults-number">Взрослые:</label>
-                           <input class="search__plus-minus" type="button" value="-">
+                           <span class="minus"></span>
                            <input class="search__input--short" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
-                           <input class="search__plus-minus" type="button" value="+">
+                           
                         </div>
                         <div class="search__amount--kids">
                            <label class="search__label search__label--kids" for="kids-number">Дети:</label>
@@ -139,7 +143,7 @@
            
          </main>
          <footer class="main-footer">
-            <h2 hidden>Contacts</h2>
+            <h2 class="visually-hidden">Contacts</h2>
             <div class="main-footer__container">
                <div class="main-footer__hashtag">
                   <p class="main-footer__text">#visitsedona</p>
