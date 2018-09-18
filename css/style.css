@@ -64,16 +64,7 @@ a {
 
 }
 .welcome__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    text-align: center;
     height: 507px;
     background-image: url("../img/polygon.png");
     background-repeat: no-repeat;
@@ -335,8 +326,8 @@ a {
     
 }
 .map__picture {
-    position: absolute;
-    z-index: -1;
+    position: relative;
+  
     top: 85px;
     
    
@@ -382,6 +373,7 @@ a {
     align-items: center;
     background-color: #ffffff;
     margin-top: 25px;
+    position: absolute;
 }
 .search__wrapper {
     margin: 52px 52px 52px 52px;
@@ -573,6 +565,7 @@ input::-webkit-input-placeholder{
   button {
     border: none;
     background: none;
+    padding: 1px 6px;
   }   
 
 
