@@ -123,16 +123,24 @@
                      <div class="search__amount">
                         <div class="search__amount--adults">
                            <label class="search__label search__label--adults" for="adults-number">Взрослые:</label>
-                           <span class="minus"></span>
+                           <button class="control control--minus" type="button">
+                              <span class="visually-hidden">Уменьшить</span>
+                            </button>
                            <input class="search__input--short" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
-                           
+                           <button class="control control--plus" type="button">
+                              <span class="visually-hidden">Увеличить</span>
+                            </button>
                         </div>
                         <div class="search__amount--kids">
                            <label class="search__label search__label--kids" for="kids-number">Дети:</label>
                            
-                           <input class="search__plus-minus" type="button" value="-">
+                           <button class="control control--minus" type="button">
+                              <span class="visually-hidden">Уменьшить</span>
+                            </button>
                            <input class="search__input--short" type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
-                           <input class="search__plus-minus" type="button" value="+">
+                           <button class="control control--plus" type="button">
+                              <span class="visually-hidden">Увеличить</span>
+                            </button>
                               
                         </div>
                      </div>
