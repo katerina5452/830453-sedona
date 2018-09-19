@@ -125,22 +125,24 @@
                      <div class="search__amount">
                         <div class="search__amount--adults">
                            <label class="search__label search__label--adults" for="adults-number">Взрослые:</label>
-                           <button class="control control--minus" type="button">
+                           <div class="controls">
+                           <button class="control control--minus control--minus-adults" type="button">
                               <span class="visually-hidden">Уменьшить</span>
                             </button>
                            <input class="search__input--short" type="number" value="2" min="1" max="10" step="1" name="adults-number" id="adults-number">
-                           <button class="control control--plus" type="button">
+                           <button class="control control--plus control--plus-adults" type="button">
                               <span class="visually-hidden">Увеличить</span>
                             </button>
+                            </div>
                         </div>
                         <div class="search__amount--kids">
                            <label class="search__label search__label--kids" for="kids-number">Дети:</label>
                            
-                           <button class="control control--minus" type="button">
+                           <button class="control control--minus control--minus-kids" type="button">
                               <span class="visually-hidden">Уменьшить</span>
                             </button>
-                           <input class="search__input--short" type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
-                           <button class="control control--plus" type="button">
+                           <input class="search__input--short search__input--kids" type="number" value="0" min="0" max="20" step="1" name="kids-number" id="kids-number">
+                           <button class="control control--plus control--plus-kids" type="button">
                               <span class="visually-hidden">Увеличить</span>
                             </button>
                               
@@ -193,7 +195,7 @@
                <p class="footer-copyright">
                   <b>Website by</b>
                   <a class="footer__logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                  <img src="img/logo-htmlacademy.svg" width="122" height="43" alt="mini-logo">
+                  <img src="img/logo-htmlacademy.svg" width="115" height="43" alt="mini-logo">
                   </a>
                </p>
             </div>

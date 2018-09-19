@@ -134,7 +134,7 @@ a {
     line-height: 26px;
     text-align: center;
     margin-top: 10px; 
-    margin-left: -55px;
+    
 }
 .features__number--second {
     margin-top: 20px;
@@ -198,7 +198,7 @@ a {
 .features__title--city {
     width: 125px;
     margin-top: 50px;
-    margin-left: 80px;
+    
     margin-bottom: 22px;
 }
 .features__title--home {
@@ -254,8 +254,7 @@ a {
 .features__title--bridge {
     width: 154px;
     margin-top: 49px;
-   margin-left: 65px;
-   margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .features__item--banner {
     color: #ffffff;
@@ -267,14 +266,17 @@ a {
 
 }
 .features__text--city {
-    margin-right: 50px;
-    margin-left: -5px;
+    padding-bottom: 20px; 
     margin-top: 19px;
+    padding-left: 57px;
+    padding-right: 50px;
 }
 .features__text--bridge {
-    margin-right: 46px;
-    margin-left: -10px;
+       
     margin-top: 0px;
+    padding-left: 48px;
+    padding-right: 41px;
+    padding-bottom: 20px;
 }
 .features__item {
     background-color: #eeeeee;
@@ -431,29 +433,29 @@ a {
        
 }
 .search__label {
-    margin-top: 9px;
+    margin-top: 8px;
    
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
+    padding-left: 5px;
     
 }
 .search__label--adults {
        
-    padding-right: 48px;
+    padding-right: 60px;
     justify-content: space-between;
 }
 .search__label--kids {
-    margin-right: 12px;
-    margin-left: 82px;
-    padding: 0;
+    margin-right: 86px;
+    
 }
 .search__input--long {
     font: inherit;
     background-color: #f2f2f2;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    width: 360px;
+    width: 348px;
     
     padding-top: 8px;
     padding-left: 11px;
@@ -463,8 +465,16 @@ a {
     position: absolute;
     z-index: 1;
     right: 51px;
-    margin-right: -15px;
+    
    
+}
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 .search__calendar {
     position: relative;
@@ -478,19 +488,23 @@ a {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     height: 38px;
-    width: 125px;
+    width: 40;
     text-align: center;
     border: none;
     text-transform: uppercase;
     font-weight: bold;
     color: #000000;
-    padding-left: 13px;
-    margin-right: -45px;
-    margin-left: -11px;
     
+    padding-right: 8px;
     
+    left: 21px;
    
-    
+    position: relative;
+      
+}
+.search__input--kids {
+    left: -18px;
+    padding-left: 2px;
 }
 input::-webkit-input-placeholder{
     text-transform: uppercase;
@@ -508,8 +522,8 @@ input::-webkit-input-placeholder{
     border: none;
   
     margin-top: 25px;
-    padding-left: 205px;
-    padding-right: 195px;
+    padding-left: 197px;
+    padding-right: 198px;
     padding-top: 17px;
     padding-bottom: 22px;
     -webkit-box-sizing: content-box;
@@ -527,12 +541,29 @@ input::-webkit-input-placeholder{
     
 }
 .control {
-    position: relative;
+    position: absolute;
     padding: 0;
     cursor: pointer;
+    border: none;
+    background: none;
+    height: 38px;
+    width: 40px;
+    background-color: #f2f2f2;
     
   }
-  
+  .control--minus-adults {
+      left: 170px;
+  }
+  .control--minus-kids {
+      right: 129px;
+  }
+  .control--plus-adults {
+    left: 246px;
+    bottom: 166px;
+  }
+  .control--plus-kids {
+      left: 478px;
+  }
   .control--minus::before, .control--plus::after {
       content: "";
       position: absolute;
@@ -562,11 +593,7 @@ input::-webkit-input-placeholder{
       height: 3px;
   }
    
-  button {
-    border: none;
-    background: none;
-    padding: 1px 6px;
-  }   
+  
 
 
 .search__button:hover {
@@ -607,7 +634,7 @@ input::-webkit-input-placeholder{
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
-    margin-top: -15px;
+    margin-top: -19px;
 }
 .social {
     list-style: none;
@@ -624,8 +651,8 @@ input::-webkit-input-placeholder{
     display: flex;
     margin: 0 auto;
     padding: 0;
-    width: 160px;
-    margin-top: 10px;
+    width: 156px;
+    margin-top: 5px;
     margin-bottom: 36px;
 }
 .social__button {
@@ -1070,8 +1097,8 @@ input::-webkit-input-placeholder{
 }
 .features__wrapper {
     
-    margin-right: auto;
-    margin-left: 57px;
+    flex-basis: 400px;
+    text-align: center;
 }
 .features__wrapper-last {
     margin-left: 50px;
